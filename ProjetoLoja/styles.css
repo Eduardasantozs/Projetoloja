@@ -1,0 +1,284 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    
+  
+    font-family: "Open Sans", sans-serif;
+    
+         background-size: cover; /* Faz a imagem cobrir todo o fundo */
+        background-position: center; /* Centraliza a imagem no fundo */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        /* Outros estilos opcionais */
+         color: #333; /* Cor do texto principal */
+    
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+   
+}
+/* Estilos do header e menu */
+
+header {
+    background-color: #ccc;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.material-icons {
+    cursor: pointer;
+    position: fixed;
+    right: 20px; /* Distância da direita da tela */
+    font-size: 24px; /* Tamanho do ícone */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do ícone */
+  
+    }
+
+#itens {
+    display: none;
+    background-color: #bcbaba;
+}
+
+#itens ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itens ul li {
+    margin: 10px 0;
+}
+
+#itens ul li a {
+    color: #050202;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#itens ul {
+    margin: 0;
+    padding: 0;
+}
+
+#itens ul li {
+    margin-bottom: 10px;
+}
+
+   
+/* Estilizando a lista não ordenada */
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilizando os itens da lista */
+form ul li {
+    margin-bottom: 15px;
+}
+
+/* Estilizando os campos de entrada de texto e email */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilizando o botão de envio */
+form button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efeito de hover para o botão de envio */
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilizando o formulário para centralizá-lo na página */
+form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+/* Estilização básica para o slider */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Altura desejada do slider */
+    margin-top: 250px; /* Margem superior para posicionar abaixo do header */
+}
+
+.swiper-button-next{
+    color: #ffffff;
+
+}
+.swiper-button-prev{
+    color: #ffffff;
+
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 20px;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.swiper-slide video {
+    width: 100%; /* Ajusta o vídeo para ocupar toda a largura do swiper-slide */
+    height: 190%; /* Ajusta o vídeo para ocupar toda a altura do swiper-slide */
+    object-fit: cover; /* Garante que o vídeo cubra todo o espaço do contêiner */
+}
+
+
+#countdown {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 32px;
+    font-weight: bold;
+}
+/* Estilo para a seção de produtos */
+#produtos {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(img/transferir.jpeg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    margin-top: 200px; /* Margem superior para posicionar abaixo do header */
+}
+
+#produtos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Estilo para os ícones */
+img {
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    margin-right: 10px; /* Espaço entre os ícones e o texto */
+    vertical-align: middle; /* Alinhar verticalmente com o texto */
+}
+
+/* Estilo para o texto ao lado dos ícones */
+p {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block; /* Para que os parágrafos fiquem na mesma linha */
+    margin: 0; /* Remover margens padrão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para o contêiner principal (opcional) */
+.contact-info {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Responsiva</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sobre.html">
+  </head>
+<body>
+    <header>
+        <h1>BLUE JEANS</h1>
+        
+    
+        <i class="material-icons" onclick="clickMenu()">menu</i>
+    </header>
+    <menu id="itens">
+        <ul>
+            <li><a href="home.html" onclick="clickMenu()">Home</a></li>
+            <li><a href="produ.html" onclick="clickMenu()">Produtos</a></li>
+            <li><a href="promo.html" onclick="clickMenu()">Promoções</a></li>
+            <li><a href="contato.html" onclick="clickMenu()">Contato</a></li>
+            <li><a href="sobre.html" onclick="clickMenu()">Sobre</a></li>
+        </ul>
+    </menu>
+
+    <main>
+
+        <section id="home">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+<video width="640" height="360" autoplay muted loop>
+                        <source src="img/v1.mp4" type="video/mp4">
+</video>                   
+                   
+                   
+                </div>
+
+                <div class="swiper-slide">
+<video width="640" height="360" autoplay muted loop>
+                        <source src="img/v2.mp4" type="video/mp4">
+                      
+</video>                    
+                   
+                </div>
+
+                <div class="swiper-slide">
+<video width="640" height="360" autoplay muted loop>
+                        <source src="img/v3.mp4" type="video/mp4">
+</video>                   
+                  
+                    
+                </div>
+            </div>
+        </div>
+                <!-- Adicione os botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    
+   <!-- adicionando os produtos -->
+ 
+<section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos-container">
+        
+     
+        <div class="produto" data-descricao="Descrição detalhada do Produto 1">
+            <img src="img/3.jpeg" alt="Produto 1">
+            <h3>Produto 1</h3>
+            
+            <p>R$ 89,00</p>
+        </div>
+        <div class="produto" data-descricao="Descrição detalhada do Produto 2">
+            <img src="img/And Now, the 7 Biggest Jeans Trends of Fall 2020.jpeg" alt="Produto 2">
+            <h3>Produto 2</h3>
+          
+            <p>R$ 70,00</p>
+        </div>
+        <div class="produto" data-descricao="Descrição detalhada do Produto 3">
+            <img src="img/b6d8ac89-542e-40d1-b3b4-17b744111089.jpeg" alt="Produto 3">
+            <h3>Produto 3</h3>
+         
+            <p>R$ 90,00</p>
+        </div>
+        <div class="produto" data-descricao="Descrição detalhada do Produto 4">
+            <img src="img/c2029fc6-fea4-475a-9b95-f2c023e1403c.jpeg" alt="Produto 4">
+            <h3>Produto 4</h3>
+          
+            <p>R$ 900,00</p>
+        </div>
+
+     <div class="produto" data-descricao="Descrição detalhada do Produto 5">
+            <img src="img/Diesel Vestes en denim DE-KHLO-S.jpeg" alt="Produto 5">
+            <h3>Produto 5</h3>
+        
+            <p>R$ 100,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 6">
+            <img src="img/GOLDSIGN - + Net Sustain The Haven Low-rise Boyfriend Jeans - Blue - 29.jpeg" alt="Produto 6">
+            <h3>Produto 6</h3>
+            
+            <p>R$ 980,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 7">
+            <img src="img/InStyle Editors and Fashion Stylists Absolutely Love These High-Waisted Jeans.jpeg" alt="Produto 7">
+            <h3>Produto 7</h3>
+            
+            <p>R$ 410,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 8">
+            <img src="img/Next Hemdbluse - mid blue.jpeg" alt="Produto 8">
+            <h3>Produto 8</h3>
+          
+            <p>R$ 100,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 9">
+            <img src="img/Topshop Coats & Jackets _ Topshop Puffer Jackets _ ASOS.jpeg" alt="Produto 9">
+            <h3>Produto 9</h3>
+            <p>R$ 200,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 10">
+            <img src="img/8.jpeg" alt="Produto 10">
+            <h3>Produto 10</h3>
+            <p>R$ 250,00</p>
+        </div>
+
+        <div class="produto" data-descricao="Descrição detalhada do Produto 11">
+            <img src="img/9.jpeg " alt= "Produto 11">
+            <h3>Produto 11</h3>
+            <p>R$ 50,00</p>
+    </div>
+
+    <div class="produto" data-descricao="Descrição detalhada do Produto 12">
+        <img src="img/0.jpeg " alt= "Produto 12">
+        <h3>Produto 12</h3>
+        <p>R$ 120,00</p>
+</div>
+</section>
+
+        <!-- Modal -->
+        <div id="produtoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+
+        <section id="countdown">
+            <h2>Inauguração da Loja em:</h2>
+            <div id="timer">
+                <span id="days"></span> dias 
+                <span id="ho"></span> horas 
+                <span id="min"></span> minutos 
+                <span id="seg"></span> segundos
+            </div>
+        </section>
+
+    </main>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Playwrite+PE:wght@100..400&family=Vibes&display=swap');
+        </style>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
